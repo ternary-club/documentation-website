@@ -11,7 +11,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'ternary-club', // Usually your GitHub org/user name.
-  projectName: 'frontend', // Usually your repo name.
+  projectName: 'ternary-club', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Ternary Club',
@@ -24,12 +24,12 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Docs',
+          label: 'docs',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'blog', position: 'left' },
         {
           href: 'https://github.com/ternary-club',
-          label: 'GitHub',
+          label: 'github',
           position: 'right',
         },
       ],
@@ -38,40 +38,40 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'tutorial',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'community',
           items: [
             {
-              label: 'Stack Overflow',
+              label: 'stack overflow',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Discord',
+              label: 'discord',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Twitter',
+              label: 'twitter',
               href: 'https://twitter.com/docusaurus',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'more',
           items: [
             {
-              label: 'Blog',
+              label: 'blog',
               to: '/blog',
             },
             {
-              label: 'GitHub',
+              label: 'github',
               href: 'https://github.com/ternary-club',
             },
           ],
