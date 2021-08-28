@@ -22,3 +22,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.title {
+  font-family: 'Lobster', cursive;
+  color: var(--ifm-color-primary);
+}
+
+.subtitle {
+  color: #8C8C8C;
+}

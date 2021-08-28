@@ -10,68 +10,85 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'ternary-club', // Usually your GitHub org/user name.
-  projectName: 'ternary-club', // Usually your repo name.
+  organizationName: 'ternary-club',
+  projectName: 'ternary-club',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'pt'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+      pt: {
+        label: 'Português',
+        direction: 'ltr',
+      },
+    },
+  },
   themeConfig: {
     navbar: {
       title: 'Ternary Club',
-      logo: {
-        alt: 'Ternary Club Logo',
-        src: 'img/logo.svg',
-      },
+      // logo: {
+      //   alt: 'Ternary Club Logo',
+      //   src: 'img/logo.svg',
+      // },
+      // hideOnScroll: true,
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'docs',
+          to: '/#live-demo', label: 'Live demo', position: 'left', activeBasePath: '/#live-demo',
         },
-        { to: '/blog', label: 'blog', position: 'left' },
         {
-          href: 'https://github.com/ternary-club',
-          label: 'github',
-          position: 'right',
+          type: 'doc', docId: 'intro', position: 'left', label: 'Docs',
         },
+        { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          to: '/#downloads', label: 'Downloads', position: 'left', activeBasePath: '/#downloads',
+        },
+        { to: '/about-us', label: 'About us', position: 'left' },
+        // { type: 'docsVersionDropdown', position: 'right' },
+        { type: 'localeDropdown', position: 'right' },
+        { href: 'https://github.com/ternary-club', label: 'Github', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
       links: [
         {
-          title: 'docs',
+          title: 'Docs',
           items: [
             {
-              label: 'tutorial',
+              label: 'Tutorial',
               to: '/docs/intro',
             },
           ],
         },
         {
-          title: 'community',
+          title: 'Community',
           items: [
             {
-              label: 'stack overflow',
+              label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'discord',
+              label: 'Discord',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'twitter',
+              label: 'Twitter',
               href: 'https://twitter.com/docusaurus',
             },
           ],
         },
         {
-          title: 'more',
+          title: 'More',
           items: [
             {
-              label: 'blog',
+              label: 'Blog',
               to: '/blog',
             },
             {
-              label: 'github',
+              label: 'Github',
               href: 'https://github.com/ternary-club',
             },
           ],
