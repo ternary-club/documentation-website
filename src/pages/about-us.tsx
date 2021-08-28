@@ -2,23 +2,17 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-import HomepageFeatures from '../components/HomepageFeatures';
-import HomeHeader from '../components/HomeHeader';
-
-const Home: React.FC = () => {
+const AboutUs: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
 
   return (
     <Layout
-      title={siteConfig.title}
+      title={`${siteConfig.title} - About us`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomeHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <div>About us</div>
     </Layout>
   );
 };
 
-export default Home;
+export default AboutUs;
