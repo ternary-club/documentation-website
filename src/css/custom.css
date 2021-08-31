@@ -8,13 +8,13 @@
 /* You can override the default Infima variables here. */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 :root {
-  --ifm-color-primary: #CA4675;
+  --ifm-color-primary: #FA75A3;
   --ifm-color-primary-dark: #A34768;
   --ifm-color-primary-darker: #6D3B4D;
   --ifm-color-primary-darkest: #4F3D43;
-  --ifm-color-primary-light: #E16792;
-  --ifm-color-primary-lighter: #E99CB7;
-  --ifm-color-primary-lightest: #F7BDD1;
+  --ifm-color-primary-light: #FCB8D0;
+  --ifm-color-primary-lighter: #FEC5DD;
+  --ifm-color-primary-lightest: #FEDCE8;
   --ifm-code-font-size: 95%;
 }
 
@@ -34,3 +34,11 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   color: var(--ifm-color-primary);
   font-size: 24px;
 }
+
+.button--primary:not(.button--outline):hover {
+  background-color: transparent;
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  --ifm-button-color: var(--ifm-color-primary);
+}
+

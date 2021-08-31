@@ -1,0 +1,12 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.button--primary:not(.button--outline):hover {
+  --ifm-button-background-color: transparent !important;
+  background-color: transparent !important;
+  border-color: var(--ifm-color-primary) !important;
+}

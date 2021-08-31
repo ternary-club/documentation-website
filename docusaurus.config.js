@@ -29,10 +29,10 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: 'Ternary Club',
-      // logo: {
-      //   alt: 'Ternary Club Logo',
-      //   src: 'img/logo.svg',
-      // },
+      logo: {
+        alt: 'Ternary Club Logo',
+        src: 'img/logo.svg',
+      },
       // hideOnScroll: true,
       items: [
         {
