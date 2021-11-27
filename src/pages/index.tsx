@@ -2,7 +2,13 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-import { HomeHeader, Features, LiveDemo, Tutorial } from '../components';
+import {
+  HomeHeader,
+  Features,
+  LiveDemo,
+  Tutorial,
+  Downloads,
+} from '../components';
 
 const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -10,13 +16,14 @@ const Home: React.FC = () => {
   return (
     <Layout
       title={siteConfig.title}
-      description="Description will go into a meta tag in <head />"
+      description="The toolkit of the future of computing"
     >
       <HomeHeader />
       <main>
         <Features />
         <LiveDemo />
         <Tutorial />
+        <Downloads />
       </main>
     </Layout>
   );

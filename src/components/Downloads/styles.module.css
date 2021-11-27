@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: var(--ifm-color-primary-lighter);
+  padding: 48px 20px;
+  font-family: 'TT Norms Pro';
+}
+
+.container > h2 {
+  color: var(--ifm-color-primary);
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content > h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  color: var(--ifm-color-primary);
+  font-size: 72px;
+  margin: 0;
+}
+
+.content > span {
+  color: var(--ifm-color-primary);
+  font-size: 22px;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.buttonsContainer a {
+  margin-bottom: 10px;
+}
+
+.image {
+  background: var(--ifm-color-primary-lightest);
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 20px 0;
+}
+
+.image > h1 {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  font-size: 48px;
+  margin: 0;
+}
+
+.image > span {
+  font-size: 20px;
+  color: var(--ifm-color-primary);
+  margin-bottom: 20px;
+}

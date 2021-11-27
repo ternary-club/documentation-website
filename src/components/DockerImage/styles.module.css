@@ -1,0 +1,37 @@
+.command {
+  background: var(--ifm-color-primary-lighter);
+  border-radius: 10px;
+  padding: 5px 10px 5px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.command > span {
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+.command > svg {
+  margin-left: 24px;
+  cursor: pointer;
+  color: var(--ifm-color-primary);
+}
+
+.command > svg:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+.command > svg:active {
+  color: var(--ifm-color-primary-darker);
+}
+
+.invert {
+  background: var(--ifm-color-primary-lightest);
+}
+
+
