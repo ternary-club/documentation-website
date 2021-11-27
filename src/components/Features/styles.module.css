@@ -1,0 +1,4 @@
+.container {
+  background: var(--ifm-color-primary-lightest);
+  padding: 40px 40px 420px;
+}

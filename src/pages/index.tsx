@@ -2,8 +2,9 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-import HomepageFeatures from '../components/HomepageFeatures';
-import HomeHeader from '../components/HomeHeader';
+import { HomeHeader } from '../components/HomeHeader';
+import { Features } from '../components/Features';
+import { LiveDemo } from '../components/LiveDemo';
 
 const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -15,7 +16,8 @@ const Home: React.FC = () => {
     >
       <HomeHeader />
       <main>
-        <HomepageFeatures />
+        <Features />
+        <LiveDemo />
       </main>
     </Layout>
   );

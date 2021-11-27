@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { FiExternalLink } from 'react-icons/fi';
 import { HiOutlineBookmarkAlt } from 'react-icons/hi';
 
-import IconLink from '../IconLink';
+import { IconLink } from '../IconLink';
 
 import styles from './styles.module.css';
 
@@ -35,4 +35,4 @@ const HomeHeader: React.FC = () => {
   );
 };
 
-export default HomeHeader;
+export { HomeHeader };

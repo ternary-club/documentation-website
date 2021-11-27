@@ -7,8 +7,8 @@ import styles from './styles.module.css';
 interface IconLinkProps {
   text: string;
   to: string;
-  Icon: any
-  outline?: boolean
+  Icon: any;
+  outline?: boolean;
 }
 
 const IconLink: React.FC<IconLinkProps> = ({
@@ -26,9 +26,9 @@ const IconLink: React.FC<IconLinkProps> = ({
     )}
     to={to}
   >
-    <Icon className="margin-right--sm" color="var(--ifm-button-color)" size={32} />
+    <Icon className="margin-right--sm" style={{ transition: 'all 0.2s' }} color="var(--ifm-button-color)" size={32} />
     {text}
   </Link>
 );
 
-export default IconLink;
+export { IconLink };
