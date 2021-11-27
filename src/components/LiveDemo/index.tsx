@@ -18,44 +18,55 @@ const LiveDemo: React.FC = () => {
       <div className={classes.content}>
         <h1>Live Demo</h1>
         <div className="row">
-          <div className={classes.code} style={{ width: '30vw' }}>
-            <AceEditor
-              style={{ borderRadius: 10 }}
-              mode="terry"
-              theme="kuroir"
-              name="editor"
-              onChange={value => setCode(value)}
-              fontSize={16}
-              width="100%"
-              height="100%"
-              value={code}
-              setOptions={{
-                tabSize: 2,
-                showLineNumbers: true,
-                dragEnabled: true,
-                // firstLineNumber: -10,
-                fontFamily: '"Fira code", "monospace"',
-                scrollPastEnd: true,
-                displayIndentGuides: true,
-                highlightActiveLine: true,
-                showGutter: true,
-                printMargin: true,
-                wrap: true,
-              }}
-            />
+          <div className={classes.codeContainer}>
+            <div className={classes.code} style={{ width: '30vw' }}>
+              <AceEditor
+                style={{ borderRadius: 10 }}
+                mode="terry"
+                theme="kuroir"
+                name="editor"
+                onChange={value => setCode(value)}
+                fontSize={16}
+                width="100%"
+                height="100%"
+                value={code}
+                setOptions={{
+                  tabSize: 2,
+                  showLineNumbers: true,
+                  dragEnabled: true,
+                  // firstLineNumber: -10,
+                  fontFamily: '"Fira code", "monospace"',
+                  scrollPastEnd: true,
+                  displayIndentGuides: true,
+                  highlightActiveLine: true,
+                  showGutter: true,
+                  printMargin: true,
+                  wrap: true,
+                }}
+              />
+            </div>
+            <span>Input (Terry)</span>
           </div>
           <button
             className={clsx(
               classes.button,
               'button',
               'button--primary',
-              'no-trasparent-bg',
+              'no-transparent-bg',
             )}
             onClick={handlePlayCode}
           >
             <Play width={32} height={32} />
           </button>
-          <div className={classes.code} style={{ width: '15vw' }} />
+          <div className={classes.codeContainer}>
+            <div
+              className={classes.code}
+              style={{ width: '20vw', padding: '15px 20px' }}
+            >
+              <span>&gt; 15</span>
+            </div>
+            <span>Output (Taylor)</span>
+          </div>
         </div>
       </div>
     </div>

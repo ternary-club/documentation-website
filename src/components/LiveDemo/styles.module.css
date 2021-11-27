@@ -19,7 +19,7 @@
 }
 
 .button {
-  margin: 15px;
+  margin: 32px;
   height: 72px;
   width: 72px;
   display: flex;
@@ -29,9 +29,23 @@
   align-self: center;
 }
 
+.codeContainer > span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #8C8C8C;
+  margin-left: 15px;
+}
+
 .code {
   background: #F0F0F0;
   border: 2px solid var(--ifm-color-primary);
   border-radius: 10px;
   height: 400px;
+}
+
+.code > span {
+  color: var(--ifm-color-primary);
+  font-size: 48px;
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
 }
