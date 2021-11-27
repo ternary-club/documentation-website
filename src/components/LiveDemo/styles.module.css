@@ -24,7 +24,7 @@
 }
 
 .code {
-  background: var(--ifm-hero-background-color);
+  background: #F0F0F0;
   border: 2px solid var(--ifm-color-primary);
   border-radius: 10px;
   height: 300px;

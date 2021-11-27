@@ -45,7 +45,8 @@
     "no-continue": "off",
     "no-cond-assign": "off",
     "import/no-unresolved": "off",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "jsx-a11y/control-has-associated-label": "off"
   },
   "settings": {
     "import/resolver": {
