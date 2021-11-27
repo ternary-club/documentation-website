@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 
-import styles from './styles.module.css';
+import classes from './styles.module.css';
 
 interface IconLinkProps {
   text: string;
@@ -11,9 +11,7 @@ interface IconLinkProps {
   outline?: boolean;
 }
 
-const IconLink: React.FC<IconLinkProps> = ({
-  text, Icon, to, outline,
-}) => (
+const IconLink: React.FC<IconLinkProps> = ({ text, Icon, to, outline }) => (
   <Link
     className={clsx(
       'button',
@@ -22,11 +20,16 @@ const IconLink: React.FC<IconLinkProps> = ({
       'margin-left--sm',
       outline && 'button--outline',
       'padding--sm',
-      styles.link,
+      classes.link,
     )}
     to={to}
   >
-    <Icon className="margin-right--sm" style={{ transition: 'all 0.2s' }} color="var(--ifm-button-color)" size={32} />
+    <Icon
+      className="margin-right--sm"
+      style={{ transition: 'all 0.2s' }}
+      color="var(--ifm-button-color)"
+      size={32}
+    />
     {text}
   </Link>
 );

@@ -29,7 +29,7 @@ const features = [
 
 const Features: React.FC = () => (
   <div className={clsx(classes.container, 'row', 'row--no-gutters')}>
-    {features.map((feat) => (
+    {features.map(feat => (
       <Feature
         key={feat.title}
         icon={feat.icon}

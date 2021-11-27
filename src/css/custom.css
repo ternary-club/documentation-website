@@ -35,7 +35,7 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   font-size: 24px;
 }
 
-.button--primary:not(.button--outline):hover {
+.button--primary:not(.button--outline):not(.no-trasparent-bg):hover {
   background-color: transparent;
   border-color: var(--ifm-color-primary);
   color: var(--ifm-color-primary);

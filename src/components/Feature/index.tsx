@@ -11,9 +11,7 @@ interface IFeatureProps {
 
 const Feature: React.FC<IFeatureProps> = ({ icon, title, text }) => (
   <div className={clsx(classes.container, 'col', 'col--4')}>
-    <div className={classes.iconContainer}>
-      {icon}
-    </div>
+    <div className={classes.iconContainer}>{icon}</div>
     <div className={classes.textContainer}>
       <span className={classes.title}>{title}</span>
       <span className={classes.text}>{text}</span>
