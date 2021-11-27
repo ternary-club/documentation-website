@@ -3,10 +3,10 @@ import clsx from 'clsx';
 import AnimalsImage from '@site/static/img/animals.svg';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-import { FiExternalLink } from 'react-icons/fi';
-import { HiOutlineBookmarkAlt } from 'react-icons/hi';
+import Docs from '@site/static/img/docs.svg';
+import Share from '@site/static/img/share.svg';
 
-import { IconLink } from '../IconLink';
+import { IconLink } from '..';
 
 import classes from './styles.module.css';
 
@@ -29,14 +29,10 @@ const HomeHeader: React.FC = () => {
               <IconLink
                 to="/docs/intro"
                 text="To the docs"
-                Icon={HiOutlineBookmarkAlt}
+                Icon={Docs}
                 outline
               />
-              <IconLink
-                to="/docs/intro"
-                text="Get started"
-                Icon={FiExternalLink}
-              />
+              <IconLink to="/docs/intro" text="Get started" Icon={Share} />
             </div>
           </div>
           <div className="col col--4">

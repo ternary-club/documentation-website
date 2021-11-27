@@ -28,7 +28,8 @@ const IconLink: React.FC<IconLinkProps> = ({ text, Icon, to, outline }) => (
       className="margin-right--sm"
       style={{ transition: 'all 0.2s' }}
       color="var(--ifm-button-color)"
-      size={32}
+      width={32}
+      height={32}
     />
     {text}
   </Link>

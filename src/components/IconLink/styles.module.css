@@ -1,6 +1,6 @@
 .link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 18px;
+  align-items: flex-end;
+  font-size: 20px;
 }

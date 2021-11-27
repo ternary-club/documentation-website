@@ -1,11 +1,11 @@
 import React, { useCallback, useState } from 'react';
+import clsx from 'clsx';
 import AceEditor from 'react-ace';
 import 'ace-builds/src-noconflict/mode-terry';
 import 'ace-builds/src-noconflict/theme-kuroir';
 
 import Play from '@site/static/img/play.svg';
 
-import clsx from 'clsx';
 import classes from './styles.module.css';
 
 const LiveDemo: React.FC = () => {
@@ -14,7 +14,7 @@ const LiveDemo: React.FC = () => {
   const handlePlayCode = useCallback(() => null, []);
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="live-demo">
       <div className={classes.content}>
         <h1>Live Demo</h1>
         <div className="row">
@@ -26,7 +26,7 @@ const LiveDemo: React.FC = () => {
                 theme="kuroir"
                 name="editor"
                 onChange={value => setCode(value)}
-                fontSize={16}
+                fontSize={20}
                 width="100%"
                 height="100%"
                 value={code}

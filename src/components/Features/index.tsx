@@ -5,7 +5,7 @@ import TriangleGroup from '@site/static/img/triangle-group.svg';
 import SquarePile from '@site/static/img/square-pile.svg';
 import Window from '@site/static/img/window.svg';
 
-import { Feature } from '../Feature';
+import { Feature } from '..';
 
 import classes from './styles.module.css';
 
