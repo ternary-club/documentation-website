@@ -62,7 +62,10 @@ const Downloads: React.FC = () => {
         <span>Taylor + Terry + Playground, ready to code!</span>
         <DockerImage command="docker run ternaryclub/getting-started 80:80" />
       </div>
-      <div className={classes.image} style={{ background: 'transparent' }}>
+      <div
+        className={classes.image}
+        style={{ background: 'transparent', marginTop: 16 }}
+      >
         <h1>Backend image</h1>
         <span>Taylor and Terry, with automatic updates and no UI</span>
         <DockerImage

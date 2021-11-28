@@ -17,15 +17,16 @@
   justify-content: flex-start;
   flex: 0.8;
   padding-left: 25px;
+  height: 100%;
 }
 
 .title {
   color: var(--ifm-color-primary);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .text {
   color: var(--ifm-color-primary);
-  font-size: 24px;
+  font-size: 16px;
 }
