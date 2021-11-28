@@ -35,8 +35,20 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   font-size: 24px;
 }
 
+.button {
+  border-width: 2px;
+}
+
+.button--outline {
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+.button--outline:hover {
+  background-color: var(--ifm-color-primary);
+}
+
 .button--primary:not(.button--outline):not(.no-transparent-bg):hover {
-  background-color: transparent;
+  background-color: var(--ifm-color-primary-lightest);
   border-color: var(--ifm-color-primary);
   color: var(--ifm-color-primary);
   --ifm-button-color: var(--ifm-color-primary);
