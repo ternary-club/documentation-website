@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import AnimalsImage from '@site/static/img/animals.svg';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
+import AnimalsImage from '@site/static/img/animals.svg';
 import Docs from '@site/static/img/docs.svg';
 import Share from '@site/static/img/share.svg';
+import LogoLightest from '@site/static/img/logo-lightest.svg';
 
 import { IconLink } from '..';
 
@@ -17,10 +18,10 @@ const HomeHeader: React.FC = () => {
     <header className={clsx('hero', classes.heroBanner)}>
       <div className="container">
         <div className="row">
-          <div className="col col--2" />
-          <div className="col col--5">
+          <div className={clsx(classes.titleContainer, 'col', 'col--7')}>
             <h1 className={clsx('hero__title', classes.title)}>
-              {siteConfig.title}
+              <LogoLightest className={classes.backgroundLogo} />
+              <span>{siteConfig.title}</span>
             </h1>
             <p className={clsx('hero__subtitle', classes.subtitle)}>
               {siteConfig.tagline}
@@ -35,8 +36,8 @@ const HomeHeader: React.FC = () => {
               <IconLink to="/docs/intro" text="Get started" Icon={Share} />
             </div>
           </div>
-          <div className="col col--4">
-            <AnimalsImage className={classes.image} />
+          <div className="col col--5">
+            <AnimalsImage className={classes.animalsImage} />
           </div>
         </div>
       </div>
