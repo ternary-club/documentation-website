@@ -55,7 +55,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 20px 0;
+  padding: 20px 25px 0;
+  margin-top: 32px;
+  position: relative;
+  overflow: hidden;
 }
 
 .image > h1 {
@@ -65,8 +68,25 @@
   margin: 0;
 }
 
-.image > span {
+.image > span:not(.sideLabel) {
   font-size: 20px;
   color: var(--ifm-color-primary);
   margin-bottom: 20px;
+}
+
+.sideLabel {
+  color: var(--ifm-color-primary-lightest);
+  background: var(--ifm-color-primary);
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: pre-line;
+  position: absolute;
+  width: 200px;
+  top: 25px;
+  right: -50px;
+  left: auto;
+  text-align: center;
+  letter-spacing: 0.5px;
+  transform: rotate(45deg);
 }

@@ -35,7 +35,7 @@ const LiveDemo: React.FC = () => {
                   showLineNumbers: true,
                   dragEnabled: true,
                   // firstLineNumber: -10,
-                  fontFamily: '"Fira code", "monospace"',
+                  fontFamily: '"Fira code", monospace',
                   scrollPastEnd: true,
                   displayIndentGuides: true,
                   highlightActiveLine: true,

@@ -55,14 +55,12 @@ const Downloads: React.FC = () => {
         </div>
       </div>
       <div className={classes.image}>
+        <span className={classes.sideLabel}>{'Recomended\nfor beginners'}</span>
         <h1>Coding image</h1>
         <span>Taylor + Terry + Playground, ready to code!</span>
         <DockerImage command="docker run ternaryclub/getting-started 80:80" />
       </div>
-      <div
-        className={classes.image}
-        style={{ background: 'transparent', marginTop: 32 }}
-      >
+      <div className={classes.image} style={{ background: 'transparent' }}>
         <h1>Backend image</h1>
         <span>Taylor and Terry, with automatic updates and no UI</span>
         <DockerImage
