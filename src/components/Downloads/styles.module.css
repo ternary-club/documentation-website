@@ -68,13 +68,13 @@
   margin: 0;
 }
 
-.image > span:not(.sideLabel) {
+.image > span:not(.cornerRibbon) {
   font-size: 20px;
   color: var(--ifm-color-primary);
   margin-bottom: 20px;
 }
 
-.sideLabel {
+.cornerRibbon {
   color: var(--ifm-color-primary-lightest);
   background: var(--ifm-color-primary);
   font-family: 'Fira Code', monospace;
