@@ -121,11 +121,11 @@
 
 @media screen and (max-width: 720px) {
   .up {
-    right: 0;
+    right: 5%;
   }
 
   .bottom {
-    right: 0;
+    right: 5%;
   }
 }
 

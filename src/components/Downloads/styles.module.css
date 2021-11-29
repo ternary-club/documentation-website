@@ -95,4 +95,8 @@
   .image {
     width: 90vw;
   }
+
+  .content {
+    margin: 16px 0;
+  }
 }
