@@ -1,13 +1,13 @@
-import React, { useCallback /* , useState */ } from 'react';
+import React, { useCallback, useState } from 'react';
 import clsx from 'clsx';
-// import BrowserOnly from '@docusaurus/BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 import Play from '@site/static/img/play.svg';
 
 import classes from './styles.module.css';
 
 const LiveDemo: React.FC = () => {
-  // const [code, setCode] = useState('');
+  const [code, setCode] = useState('');
 
   const handlePlayCode = useCallback(() => null, []);
 
@@ -18,10 +18,10 @@ const LiveDemo: React.FC = () => {
         <div className="row">
           <div className={classes.codeContainer}>
             <div className={classes.code} style={{ width: '30vw' }}>
-              {/* <BrowserOnly>
+              <BrowserOnly>
                 {() => {
-                  require('ace-builds/webpack-resolver');
                   const AceEditor = require('react-ace').default;
+                  require('ace-builds/webpack-resolver');
                   require('ace-builds/src-noconflict/mode-terry');
                   require('ace-builds/src-noconflict/theme-kuroir');
 
@@ -52,7 +52,7 @@ const LiveDemo: React.FC = () => {
                     />
                   );
                 }}
-              </BrowserOnly> */}
+              </BrowserOnly>
             </div>
             <span>Input (Terry)</span>
           </div>
