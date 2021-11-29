@@ -13,7 +13,7 @@ interface IDockerImageProps {
 const DockerImage: React.FC<IDockerImageProps> = ({ command, invert }) => {
   const handleCopyCommand = useCallback(
     () => navigator.clipboard.writeText(command),
-    [],
+    [command],
   );
 
   return (

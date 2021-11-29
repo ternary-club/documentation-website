@@ -5,13 +5,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Ternary Club',
   tagline: 'The toolkit of the future of computing',
-  url: 'https://ternary.club',
-  baseUrl: '/',
+  url: 'https://ternary-club.github.io',
+  baseUrl: '/documentation-website/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'ternary-club',
-  projectName: 'ternary-club',
+  projectName: 'documentation-website',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'pt'],

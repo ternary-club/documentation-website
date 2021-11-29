@@ -14,14 +14,14 @@ const AboutUsContent: React.FC = () => {
           tags={['ternary engineer', 'frontend dev', 'mobile dev', 'tester']}
           github="cdias900"
           linkedin="cdias900"
-          image="/static/img/profile-pedro.jpg"
+          image={require('@site/static/img/profile-pedro.jpg').default}
         />
         <TeamMember
           name="Thiago Antunes"
           tags={['ternary engineer', 'backend dev', 'designer', 'ui/ux']}
           github="thzoid"
           linkedin="thzoid"
-          image="/static/img/profile-thiago.jpg"
+          image={require('@site/static/img/profile-thiago.jpg').default}
         />
       </div>
     </div>
