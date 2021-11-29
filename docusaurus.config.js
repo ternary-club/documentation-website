@@ -15,16 +15,16 @@ module.exports = {
   projectName: 'documentation-website',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pt'],
+    locales: ['en' /* , 'pt' */],
     localeConfigs: {
       en: {
         label: 'English',
         direction: 'ltr',
       },
-      pt: {
-        label: 'Português',
-        direction: 'ltr',
-      },
+      // pt: {
+      //   label: 'Português',
+      //   direction: 'ltr',
+      // },
     },
   },
   themeConfig: {
@@ -34,7 +34,7 @@ module.exports = {
         alt: 'Ternary Club Logo',
         src: 'img/logo.svg',
       },
-      // hideOnScroll: true,
+      hideOnScroll: true,
       items: [
         {
           to: '/#live-demo',
