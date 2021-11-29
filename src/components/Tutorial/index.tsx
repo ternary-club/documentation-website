@@ -46,7 +46,7 @@ const Tutorial: React.FC = () => (
       </p>
       <div className={classes.imageContainer}>
         <img
-          src="/static/img/playground-1.svg"
+          src={require('@site/static/img/playground-1.jpg').default}
           alt="Playground projects"
           width="100%"
         />
@@ -66,7 +66,7 @@ const Tutorial: React.FC = () => (
 
       <div className={classes.imageContainer}>
         <img
-          src="/static/img/playground-2.svg"
+          src={require('@site/static/img/playground-2.jpg').default}
           alt="Playground build"
           width="100%"
         />
