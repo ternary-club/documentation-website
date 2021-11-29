@@ -6,3 +6,5 @@ export { LiveDemo } from './LiveDemo';
 export { Tutorial } from './Tutorial';
 export { Downloads } from './Downloads';
 export { DockerImage } from './DockerImage';
+export { AboutUs } from './AboutUs';
+export { TeamMember } from './TeamMember';

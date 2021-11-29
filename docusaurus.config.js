@@ -36,23 +36,36 @@ module.exports = {
       // hideOnScroll: true,
       items: [
         {
-          to: '/#live-demo', label: 'Live demo', position: 'left', activeBasePath: '/#live-demo',
+          to: '/#live-demo',
+          label: 'Live demo',
+          position: 'left',
+          activeBasePath: '/#live-demo',
         },
         {
-          type: 'doc', docId: 'intro', position: 'left', label: 'Docs',
+          type: 'doc',
+          docId: 'intro',
+          position: 'left',
+          label: 'Docs',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          to: '/#downloads', label: 'Downloads', position: 'left', activeBasePath: '/#downloads',
+          to: '/#downloads',
+          label: 'Downloads',
+          position: 'left',
+          activeBasePath: '/#downloads',
         },
         { to: '/about-us', label: 'About us', position: 'left' },
         // { type: 'docsVersionDropdown', position: 'right' },
         { type: 'localeDropdown', position: 'right' },
-        { href: 'https://github.com/ternary-club', label: 'Github', position: 'right' },
+        {
+          href: 'https://github.com/ternary-club',
+          label: 'Github',
+          position: 'right',
+        },
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',

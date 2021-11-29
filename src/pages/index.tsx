@@ -14,10 +14,7 @@ const Home: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
 
   return (
-    <Layout
-      title={siteConfig.title}
-      description="The toolkit of the future of computing"
-    >
+    <Layout title="Home" description={siteConfig.tagline}>
       <HomeHeader />
       <main>
         <Features />

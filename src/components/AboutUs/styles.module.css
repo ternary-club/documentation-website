@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--ifm-color-primary-lightest);
+  font-family: 'TT Norms Pro';
+  padding: 96px 0 108px;
+}
+
+.container h1 {
+  color: var(--ifm-color-primary);
+}

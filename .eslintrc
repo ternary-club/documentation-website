@@ -63,7 +63,8 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-nested-ternary" : "off",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-var-requires": "off"
   },
   "settings": {
     "import/resolver": {

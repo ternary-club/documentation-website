@@ -54,7 +54,7 @@ const Downloads: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className={classes.image}>
+      <div className={clsx(classes.image, 'shadow--md')}>
         <span className={classes.cornerRibbon}>
           {'Recomended\nfor beginners'}
         </span>
