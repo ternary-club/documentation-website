@@ -1,8 +1,6 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
 
-import Playground1 from '@site/static/img/playground-1.svg';
-import Playground2 from '@site/static/img/playground-2.svg';
 import Docs from '@site/static/img/docs.svg';
 import Paper from '@site/static/img/paper.svg';
 
@@ -47,7 +45,11 @@ const Tutorial: React.FC = () => (
         browser and you’ll probably see something like this:
       </p>
       <div className={classes.imageContainer}>
-        <Playground1 width="100%" height={375} />
+        <img
+          src="/static/img/playground-1.svg"
+          alt="Playground projects"
+          width="100%"
+        />
         <span>It means it worked!</span>
       </div>
 
@@ -63,7 +65,11 @@ const Tutorial: React.FC = () => (
       </p>
 
       <div className={classes.imageContainer}>
-        <Playground2 width="100%" height={375} />
+        <img
+          src="/static/img/playground-2.svg"
+          alt="Playground build"
+          width="100%"
+        />
         <span>That hammer right there.</span>
       </div>
       <p>

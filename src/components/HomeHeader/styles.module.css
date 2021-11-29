@@ -57,11 +57,34 @@
   position: relative;
 }
 
+.animalsContainer {
+  position: relative;
+}
+
+.animalsContainer span {
+  position: absolute;
+  color: #8C8C8C;
+}
+
+.up {
+  top: 25px;
+  right: 0;
+}
+
+.bottom {
+  bottom: -30px;
+  right: 0;
+  width: auto;
+}
+
 @media screen and (max-width: 996px) {
   .animalsImage {
     width: 300px;
     height: 300px;
-    float: left;
+  }
+
+  .titleContainer {
+    align-items: center;
   }
 
   .title {
@@ -71,11 +94,8 @@
 
   .subtitle {
     font-size: 32px;
-    max-width: 400px;
-  }
-
-  .buttons {
-    width: 400px;
+    white-space: normal;
+    max-width: unset;
   }
 
   .backgroundLogo {
@@ -84,5 +104,33 @@
     position: absolute;
     top: -50px;
     left: -45px;
+  }
+
+  .animalsContainer {
+    margin-top: 16px;
+  }
+
+  .up {
+    right: 20%;
+  }
+
+  .bottom {
+    right: 25%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .up {
+    right: 0;
+  }
+
+  .bottom {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .buttons {
+    width: 95%;
   }
 }

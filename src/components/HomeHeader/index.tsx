@@ -36,8 +36,12 @@ const HomeHeader: React.FC = () => {
               <IconLink to="/docs/intro" text="Get started" Icon={Share} />
             </div>
           </div>
-          <div className="col col--5">
+          <div className={clsx(classes.animalsContainer, 'col', 'col--5')}>
+            <span className={classes.up}>That’s right, this lad is Terry</span>
             <AnimalsImage className={classes.animalsImage} />
+            <span className={classes.bottom}>
+              and the lady is Taylor. Please, be a gentleman.
+            </span>
           </div>
         </div>
       </div>
