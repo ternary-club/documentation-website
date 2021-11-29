@@ -7,9 +7,51 @@ import Play from '@site/static/img/play.svg';
 import classes from './styles.module.css';
 
 const LiveDemo: React.FC = () => {
-  const [code, setCode] = useState('');
+  const [code, setCode] = useState(
+    `tryte a = 6\ntryte b = 2\nStart\n  1a = a + b`,
+  );
+  const [output, setOutput] = useState('');
 
-  const handlePlayCode = useCallback(() => null, []);
+  const handlePlayCode = useCallback(() => {
+    setOutput(_ => {
+      if (code.includes('a + b'))
+        return String(
+          code
+            .match(/= [0-9].*/g)
+            ?.map(match => Number(match.replace(/= /g, '')))
+            .reduce((prev, curr) => prev + curr),
+        );
+
+      switch (
+        code
+          .match(/= 0b[0-9N].*/g)
+          ?.map(match => {
+            switch (match.replace(/= 0b/g, '')) {
+              case '10':
+                return Number(1);
+              case 'N0':
+                return Number(-1);
+              default:
+                return Number(0);
+            }
+          })
+          .reduce((prev, curr) => {
+            if (prev === 0 || curr === 0) return 0;
+            if (prev === curr) return -1;
+            return 1;
+          })
+      ) {
+        case -1:
+          return (code.match(/1a = [0-9].*/g) || [''])[0].replace(/1a = /g, '');
+        case 0:
+          return (code.match(/1a = [0-9].*/g) || [''])[1].replace(/1a = /g, '');
+        case 1:
+          return (code.match(/1a = [0-9].*/g) || [''])[2].replace(/1a = /g, '');
+        default:
+          return '';
+      }
+    });
+  }, [code]);
 
   return (
     <div className={classes.container} id="live-demo">
@@ -69,7 +111,7 @@ const LiveDemo: React.FC = () => {
           </button>
           <div className={classes.codeContainer}>
             <div className={clsx(classes.code, classes.output)}>
-              <span>&gt; 15</span>
+              <span>&gt; {output}</span>
             </div>
             <span>Output (Taylor)</span>
           </div>
