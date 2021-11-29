@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkternary_club=self.webpackChunkternary_club||[]).push([[535],{45641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/pt/blog/welcome"},{"title":"Hello","permalink":"/pt/blog/hello-world"},{"title":"Hola","permalink":"/pt/blog/hola"}]}')}}]);

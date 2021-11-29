@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkternary_club=self.webpackChunkternary_club||[]).push([[99],{29438:function(e){e.exports=JSON.parse('{"allTagsPath":"/documentation-website/pt/blog/tags","slug":"hello","name":"hello","count":2,"permalink":"/documentation-website/pt/blog/tags/hello"}')}}]);
