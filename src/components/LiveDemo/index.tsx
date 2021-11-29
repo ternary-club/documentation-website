@@ -1,8 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import clsx from 'clsx';
-import AceEditor from 'react-ace';
-import 'ace-builds/src-noconflict/mode-terry';
-import 'ace-builds/src-noconflict/theme-kuroir';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 import Play from '@site/static/img/play.svg';
 
@@ -20,30 +18,40 @@ const LiveDemo: React.FC = () => {
         <div className="row">
           <div className={classes.codeContainer}>
             <div className={classes.code} style={{ width: '30vw' }}>
-              <AceEditor
-                style={{ borderRadius: 10 }}
-                mode="terry"
-                theme="kuroir"
-                name="editor"
-                onChange={value => setCode(value)}
-                fontSize={20}
-                width="100%"
-                height="100%"
-                value={code}
-                setOptions={{
-                  tabSize: 2,
-                  showLineNumbers: true,
-                  dragEnabled: true,
-                  // firstLineNumber: -10,
-                  fontFamily: '"Fira code", monospace',
-                  scrollPastEnd: true,
-                  displayIndentGuides: true,
-                  highlightActiveLine: true,
-                  showGutter: true,
-                  printMargin: true,
-                  wrap: true,
+              <BrowserOnly>
+                {() => {
+                  const AceEditor = require('react-ace').default;
+                  require('ace-builds/src-noconflict/mode-terry');
+                  require('ace-builds/src-noconflict/theme-kuroir');
+
+                  return (
+                    <AceEditor
+                      style={{ borderRadius: 10 }}
+                      mode="terry"
+                      theme="kuroir"
+                      name="editor"
+                      onChange={value => setCode(value)}
+                      fontSize={20}
+                      width="100%"
+                      height="100%"
+                      value={code}
+                      setOptions={{
+                        tabSize: 2,
+                        showLineNumbers: true,
+                        dragEnabled: true,
+                        // firstLineNumber: -10,
+                        fontFamily: '"Fira code", monospace',
+                        scrollPastEnd: true,
+                        displayIndentGuides: true,
+                        highlightActiveLine: true,
+                        showGutter: true,
+                        printMargin: true,
+                        wrap: true,
+                      }}
+                    />
+                  );
                 }}
-              />
+              </BrowserOnly>
             </div>
             <span>Input (Terry)</span>
           </div>

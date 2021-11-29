@@ -4,7 +4,7 @@ import { TeamMember } from '..';
 
 import classes from './styles.module.css';
 
-const AboutUs: React.FC = () => {
+const AboutUsContent: React.FC = () => {
   return (
     <div className={classes.container}>
       <h1>About us</h1>
@@ -28,4 +28,4 @@ const AboutUs: React.FC = () => {
   );
 };
 
-export { AboutUs };
+export { AboutUsContent };

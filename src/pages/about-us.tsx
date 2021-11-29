@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
-import { AboutUs as AboutUsContent } from '../components';
+import { AboutUsContent } from '../components';
 
 const AboutUs: React.FC = () => {
   const { siteConfig } = useDocusaurusContext();
