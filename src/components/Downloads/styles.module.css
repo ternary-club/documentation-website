@@ -49,7 +49,7 @@
 
 .image {
   background: var(--ifm-color-primary-lightest);
-  width: 100%;
+  width: 45vw;
   border-radius: 10px;
   display: flex;
   align-items: center;
