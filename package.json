@@ -13,7 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "postinstall": "patch-package",
-    "deploy:netlify": "netlify deploy --dir=build --prod"
+    "deploy:netlify": "yarn build && netlify deploy --dir=build --prod"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.3",
