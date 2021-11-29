@@ -52,3 +52,45 @@
   font-family: 'Fira Code', monospace;
   font-weight: 700;
 }
+
+.editor {
+  width: 30vw;
+}
+
+.output {
+  width: 20vw;
+  padding: 15px 20px;
+}
+
+@media screen and (max-width: 996px) {
+  .editor {
+    width: 45vw;
+  }
+
+  .output {
+    width: 25vw;
+  }
+
+  .button {
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .codeRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .editor {
+    width: 80vw;
+  }
+
+  .output {
+    width: 80vw;
+  }
+
+  .button {
+    margin: 32px;
+  }
+}

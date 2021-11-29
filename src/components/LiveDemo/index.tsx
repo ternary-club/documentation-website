@@ -15,9 +15,9 @@ const LiveDemo: React.FC = () => {
     <div className={classes.container} id="live-demo">
       <div className={classes.content}>
         <h1>Live Demo</h1>
-        <div className="row">
+        <div className={clsx(classes.codeRow, 'row')}>
           <div className={classes.codeContainer}>
-            <div className={classes.code} style={{ width: '30vw' }}>
+            <div className={clsx(classes.code, classes.editor)}>
               <BrowserOnly>
                 {() => {
                   const AceEditor = require('react-ace').default;
@@ -68,10 +68,7 @@ const LiveDemo: React.FC = () => {
             <Play width={32} height={32} />
           </button>
           <div className={classes.codeContainer}>
-            <div
-              className={classes.code}
-              style={{ width: '20vw', padding: '15px 20px' }}
-            >
+            <div className={clsx(classes.code, classes.output)}>
               <span>&gt; 15</span>
             </div>
             <span>Output (Taylor)</span>

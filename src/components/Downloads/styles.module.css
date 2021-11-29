@@ -90,3 +90,9 @@
   letter-spacing: 0.5px;
   transform: rotate(45deg);
 }
+
+@media screen and (max-width: 996px) {
+  .image {
+    width: 90vw;
+  }
+}

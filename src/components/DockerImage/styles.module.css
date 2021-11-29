@@ -6,7 +6,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 48px;
+  justify-self: center;
+  margin: 0 auto 48px;
+  width: 95%;
 }
 
 .command > span {

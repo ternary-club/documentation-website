@@ -17,7 +17,7 @@ const DockerImage: React.FC<IDockerImageProps> = ({ command, invert }) => {
   );
 
   return (
-    <div className={clsx(classes.command, ...[invert ? classes.invert : []])}>
+    <div className={clsx(classes.command, ...(invert ? [classes.invert] : []))}>
       <span>$ {command}</span>
       <Copy width={24} height={24} onClick={handleCopyCommand} />
     </div>

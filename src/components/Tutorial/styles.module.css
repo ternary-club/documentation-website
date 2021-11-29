@@ -47,3 +47,13 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 996px) {
+  .container {
+    padding: 96px 0;
+  }
+
+  .textContainer {
+    width: 90vw;
+  }
+}
