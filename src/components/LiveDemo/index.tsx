@@ -20,6 +20,7 @@ const LiveDemo: React.FC = () => {
             <div className={classes.code} style={{ width: '30vw' }}>
               <BrowserOnly>
                 {() => {
+                  require('ace-builds/webpack-resolver');
                   const AceEditor = require('react-ace').default;
                   require('ace-builds/src-noconflict/mode-terry');
                   require('ace-builds/src-noconflict/theme-kuroir');
