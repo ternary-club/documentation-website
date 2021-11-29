@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkternary_club=self.webpackChunkternary_club||[]).push([[139],{88443:function(e){e.exports=JSON.parse('{"allTagsPath":"/documentation-website/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/documentation-website/blog/tags/facebook"}')}}]);
